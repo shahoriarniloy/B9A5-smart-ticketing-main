@@ -4,6 +4,7 @@ let selectedSeat =0;
 function addTicket(event) {
     const elementId = event.target.id;
     const element = document.getElementById(elementId);
+    const seatLeftElement = document.getElementById('seatLeft');
 
     if (seatSelection[elementId]) {
         element.classList.remove('text-white');
@@ -25,7 +26,8 @@ function addTicket(event) {
 
         seatSelection[elementId] = true; 
     }
-    console.log(selectedSeat);
+    const remainingSeats = 40 - selectedSeat;
+    seatLeftElement.textContent = 'Number of remaining seats: ${remainingSeats}';
 
 
 
