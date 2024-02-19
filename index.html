@@ -74,7 +74,8 @@
                     every mile is a testament to our commitment to excellence.
                 </p>
 
-                <a class="btn btn-success w-48 text-black  bg-green-500 mt-6" href="">Buy Tickets</a>
+                <button onclick="scrollToSection()" class="btn btn-success w-48 text-black  bg-green-500 mt-6"
+                    href="">Buy Tickets</button>
 
             </div>
 
@@ -169,8 +170,8 @@
 
     </section>
 
-    <section
-        class="  mx-auto mt-40 bg-stone-50  border-t-4 border-t-green-500 rounded-full m-auto flex flex-col items-center">
+    <section id="buyTickets"
+        class="  mx-auto mt-40 bg-stone-50  border-t-4 border-t-green-500 rounded-[30px] m-auto flex flex-col items-center">
         <h1 class="text-4xl text-center font-bold mb-8 mt-20">P.H Paribahan</h1>
         <p class="text-gray-400 text-center mb-6">Experience a voyage of luxury and ease aboard our top-tier bus
             service,
@@ -181,25 +182,25 @@
 
             <div>
 
-               <div class="flex justify-between">
-                <div class="flex place-items-center mt-8">
-                    <img class="mx-4 w-auto" src="images/bus-logo.png" alt="">
-                    <div class=" mt-8">
-                        <h1 class="text-3xl font-bold text-left">Greenline Paribahan</h1>
-                        <p class="text-left text-gray-400 mb-6">Coach-009-WEB ! AC_Business</p>
+                <div class="flex justify-between">
+                    <div class="flex place-items-center mt-8">
+                        <img class="mx-4 w-auto" src="images/bus-logo.png" alt="">
+                        <div class=" mt-8">
+                            <h1 class="text-3xl font-bold text-left">Greenline Paribahan</h1>
+                            <p class="text-left text-gray-400 mb-6">Coach-009-WEB ! AC_Business</p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex place-items-center mt-8">
+                        <img class="mx-4 w-auto" src="images/armchair.svg" alt="">
+                        <div class=" mt-8">
+                            <p class="text-left text-green-500 pb-4 mb-6" id="seatLeft">40 Seats left</p>
+                        </div>
+
                     </div>
 
                 </div>
-
-                <div class="flex place-items-center mt-8">
-                    <img class="mx-4 w-auto" src="images/armchair.svg" alt="">
-                    <div class=" mt-8">
-                        <p class="text-left text-green-500 pb-4 mb-6" id="seatLeft">40 Seats left</p>
-                    </div>
-
-                </div>
-
-               </div>
 
 
                 <div class="bg-stone-50 rounded-3xl lg:w-[808px] lg:h-[258px] p-6 ">
@@ -249,9 +250,9 @@
         </div>
 
 
-        <div class="bg-white rounded-lg lg:w-[1170px]  px-8 mt-6 flex">
+        <div class="bg-white rounded-lg lg:w-[1170px]  px-8 mt-6 flex justify-around py-6">
 
-            <div>
+            <div class="border-r border-dashed px-12 p-6">
                 <p class=" text-2xl font-semibold mt-8 mb-6">Select Your Seat</p>
                 <hr class="border-dashed">
 
@@ -269,299 +270,312 @@
 
                 <hr class="border-dashed  my-4">
 
-                <div class="flex justify-between mb-6 ">
+                <div class="text-center">
 
-                    <p class="text-gray-400 px-6 py-2" >A</p>
 
-                    <div class="flex justify-between mr-8">
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="a1">A1</p>
-
+                    <div class="flex justify-between mb-6 text-gray-400">
+                        <p class="text-gray-400 px-6 py-2" id="A">A</p>
+                        <div class="flex justify-between mr-8">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="a1">
+                                <p id="A1">A1</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="a2">
+                                <p id="A2">A2</p>
+                            </div>
                         </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="a2">A2</p>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between ">
-
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="a3">A3</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="a4">A4</p>
-
+                        <div class="flex justify-between">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="a3">
+                                <p id="A3">A3</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="a4">
+                                <p id="A4">A4</p>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="flex justify-between mb-6 text-gray-400">
+                        <p class="text-gray-400 px-6 py-2" id="B">B</p>
+                        <div class="flex justify-between mr-8">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="b1">
+                                <p id="B1">B1</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="b2">
+                                <p id="B2">B2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="b3">
+                                <p id="B3">B3</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="b4">
+                                <p id="B4">B4</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex justify-between mb-6 text-gray-400">
+                        <p class="text-gray-400 px-6 py-2" id="C">C</p>
+                        <div class="flex justify-between mr-8">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="c1">
+                                <p id="C1">C1</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="c2">
+                                <p id="C2">C2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="c3">
+                                <p id="C3">C3</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="c4">
+                                <p id="C4">C4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between mb-6 text-gray-400">
+                        <p class="text-gray-400 px-6 py-2" id="D">D</p>
+                        <div class="flex justify-between mr-8">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="d1">
+                                <p id="D1">D1</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="d2">
+                                <p id="D2">D2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="d3">
+                                <p id="D3">D3</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="d4">
+                                <p id="D4">D4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between mb-6 text-gray-400">
+                        <p class="text-gray-400 px-6 py-2" id="E">E</p>
+                        <div class="flex justify-between mr-8">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20 " id="e1">
+                                <p id="E1">E1</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="e2">
+                                <p id="E2">E2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="e3">
+                                <p id="E3">E3</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="e4">
+                                <p id="E4">E4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between mb-6 text-gray-400">
+                        <p class="text-gray-400 px-6 py-2" id="F">F</p>
+                        <div class="flex justify-between mr-8">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="f1">
+                                <p id="F1">F1</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="f2">
+                                <p id="F2">F2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="f3">
+                                <p id="F3">F3</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="f4">
+                                <p id="F4">F4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between mb-6 text-gray-400">
+                        <p class="text-gray-400 px-6 py-2" id="G">G</p>
+                        <div class="flex justify-between mr-8">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20 " id="g1">
+                                <p id="G1">G1</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="g2">
+                                <p id="G2">G2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="g3">
+                                <p id="G3">G3</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="g4">
+                                <p id="G4">G4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between mb-6 text-gray-400">
+                        <p class="text-gray-400 px-6 py-2" id="H">H</p>
+                        <div class="flex justify-between mr-8">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="h1">
+                                <p id="H1">H1</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="h2">
+                                <p id="H2">H2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="h3">
+                                <p id="H3">H3</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="h4">
+                                <p id="H4">H4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between mb-6 text-gray-400">
+                        <p class=" px-6 py-2" id="I">I</p>
+                        <div class="flex justify-between mr-8">
+                            <div class="bg-stone-50  rounded-xl px-6 py-2 w-20" id="i1">
+                                <p id="I1">I1</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="i2">
+                                <p id="I2">I2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="i3">
+                                <p id="I3">I3</p>
+                            </div>
+                            <div class="bg-stone-50  rounded-xl px-6 py-2 w-20" id="i4">
+                                <p id="I4">I4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between mb-6 text-gray-400">
+                        <p class=" px-6 py-2" id="J">J</p>
+                        <div class="flex justify-between mr-8">
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="j1">
+                                <p id="J1">J1</p>
+                            </div>
+                            <div class="bg-stone-50  rounded-xl px-6 py-2 w-20" id="j2">
+                                <p id="J2">J2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="bg-stone-50rounded-xl px-6 py-2 w-20" id="j3">
+                                <p id="J3">J3</p>
+                            </div>
+                            <div class="bg-stone-50 rounded-xl px-6 py-2 w-20" id="j4">
+                                <p id="J4">J4</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
                 </div>
-
-
-                <div class="flex justify-between  mb-6 ">
-
-                    <p class="text-gray-400 px-6 py-2">B</p>
-                    <div class="flex justify-between mr-8">
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="b1">B1</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="b2">B2</p>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between">
-
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="b3">B3</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="b4">B4</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-between  mb-6">
-
-                    <p class="text-gray-400 px-6 py-2">C</p>
-
-
-                    <div class="flex justify-between mr-8" >
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="c1">C1</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="c2">C2</p>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between">
-
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="c3">C3</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="c4">C4</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-between  mb-6">
-
-                    <p class="text-gray-400 px-6 py-2">D</p>
-
-
-                    <div class="flex justify-between mr-8">
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="d1">D1</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="d2">D2</p>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between">
-
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="d3">D3</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="d4">D4</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="flex justify-between  mb-6">
-
-                    <p class="text-gray-400 px-6 py-2">E</p>
-
-
-                    <div class="flex justify-between mr-8">
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="e1">E1</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="e2">E2</p>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between">
-
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="e3">E3</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="e4">E4</p>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="flex justify-between  mb-6">
-
-                    <p class="text-gray-400 px-6 py-2">F</p>
-
-
-                    <div class="flex justify-between">
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="f1">F1</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="f2">F2</p>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between">
-
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="f3">F3</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="f4">F4</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-between  mb-6">
-
-                    <p class="text-gray-400 px-6 py-2">G</p>
-
-
-                    <div class="flex justify-between mr-8">
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="g1">G1</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="g2">G2</p>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between">
-
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="g3">G3</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="g4">G4</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-between  mb-6">
-
-                    <p class="text-gray-400 px-6 py-2">H</p>
-
-
-                    <div class="flex justify-between mr-8">
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="h1">H1</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="h2">H2</p>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between">
-
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="h3">H3</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="h4">H4</p>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="flex justify-between  mb-6">
-
-                    <p class="text-gray-400 px-6 py-2">I</p>
-
-
-                    <div class="flex justify-between mr-8">
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="i1">I1</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="i2">I2</p>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between">
-
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="i3">I3</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="i4">I4</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-between  mb-6">
-
-                    <p class="text-gray-400 px-6 py-2">J</p>
-
-
-                    <div class="flex justify-between mr-8">
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="j1">J1</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="j2">J2</p>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between">
-
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2 ">
-                            <p class="text-gray-400" id="j3">J3</p>
-
-                        </div>
-                        <div class=" bg-stone-50 rounded-xl px-6 py-2">
-                            <p class="text-gray-400" id="j4">J4</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-
-                <p class=" text-2xl font-semibold mt-8 mb-6">Select Your Seat</p>
-                <hr class="border-dashed">
-
-
 
             </div>
 
 
+            <div class="bg-white rounded-lg lg:w-[1170px]  px-8  flex py-6">
 
+                <div class=" p-6">
+                    <p class=" text-2xl font-semibold mt-2 mb-6">Select Your Seat</p>
+                    <hr class="border-dashed mb-8">
+
+                    <div class=" bg-stone-50  rounded-xl ">
+                        <table class="table lg:w-[433px] seat-row" id="selectedSeatsTable">
+                            <thead>
+
+                                <tr>
+                                    <th>Seat<span class="bg-green-500 text-white px-2 rounded-md"
+                                            id="selectedSeat">0</span>
+                                    </th>
+                                    <th>Class</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                            </tbody>
+
+
+                        </table>
+                        <div class="flex justify-between pl-4 pr-20">
+                            <p>Total Price</p>
+                            <p id="totalPrice">0</p>
+                        </div>
+
+                        <div class="flex justify-between p-4 hidden" id="coupon">
+                            <div class="relative w-full max-w-s ">
+                                <input id="couponInput" type="text" placeholder="Have any coupon?"
+                                    class="input w-full" />
+                                <button id="applyCoupon"
+                                    class="absolute right-0 p-2 w-20 h-10  btn  bg-green-500 text-white rounded-lg">Apply</button>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between pl-4 pr-20">
+                            <p>Grand Total</p>
+                            <p id="grandTotal">0</p>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="form-control">
+                            <label class="font-bold my-4" for="name">Passenger Name*:</label>
+                            <input class="input input-bordered w-full " type="text" id="name" name="name" placeholder="Enter your name" required>
+                          </div>
+                          <div class="form-control">
+                            <label class="font-bold my-4" for="phone">Phone Number*</label>
+                            <input class="input input-bordered w-full " type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                          </div>
+                          <div class="form-control">
+                            <label class="font-bold my-4" for="email">Email ID</label>
+                            <input class="input input-bordered w-full" type="email" id="email" name="email" placeholder="Enter your email id" required>
+                          </div>
+                          <button id="submitButton" class=" my-4 w-full h-10  btn  bg-green-500 text-white rounded-lg " type="submit" disabled>Next</button>
+                    </div>
+                 
+
+                    <div id="myModal" class="fixed top-32 left-60  lg:h-[480px]  bg-stone-50 flex items-center justify-center">
+                        <div class="modal-content bg-white p-6 rounded-lg border border-gray-300 w-5/6 md:w-1/2 lg:full relative flex flex-col items-center justify-center">
+                            <img src="images/success.png" alt="">
+                            <p class="text-center text-green-500 text-2xl font-bold my-4">SUCCESS</p>
+                            <p class="text-xl font-medium text-center mb-4">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. </p>
+                            <p class="text-sm text-gray-500 text-center">Shortly you will find a confirmation in your email.</p>
+                            <button id="continueButton" class="bg-green-500 rounded-[32px] text-white px-16 py-2 mt-4">Continue</button>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+
+                    <div class="flex justify-around">
+                        <a class="text-gray-500 text-xs underline">Terms and Conditions</a>
+                        <a class="text-gray-500 text-xs underline">Cancellation Policy</a>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
 
         </div>
 
