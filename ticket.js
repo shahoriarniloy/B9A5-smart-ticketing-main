@@ -111,16 +111,18 @@ submitElement.addEventListener('click', function() {
 
 
 function openModal() {
-    // const modal = document.getElementById('myModal');
     modal.style.display = "block";
 }
 
 
-// Add click event listener to the continue button
 continueButton.addEventListener('click', function() {
-    // Hide the modal
     modal.style.display = "none";
 });
+
+function scrollToSection() {
+    var element = document.getElementById("buyTickets");
+    element.scrollIntoView();
+}
 
 
 
