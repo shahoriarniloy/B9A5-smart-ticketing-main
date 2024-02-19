@@ -83,13 +83,19 @@ applyCouponButton.addEventListener('click', function () {
     const couponValue = couponInput.value.trim();
 
     if (isValidCoupon(couponValue)) {
-        grandTotal = (85 * grandTotal) / 100;
+        if(couponValue=== "NEW15"){
+            grandTotal = (85 * grandTotal) / 100;
+        }
+        else {
+            grandTotal = (80 * grandTotal) / 100;
+
+        }
         grandTotalElement.textContent = `${grandTotal}`;
         couponElement.classList.add('hidden');
     }
-    // else {
-    //     alert('Invalid Coupon!');
-    // }
+    else {
+        alert('Invalid Coupon!');
+    }
 });
 
 function isValidCoupon(coupon) {
